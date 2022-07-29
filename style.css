@@ -1,0 +1,585 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300;1,400&display=swap');
+
+
+*{
+    font-family: 'poppins',sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all 0.3s linear;
+
+}
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 7rem;
+}
+body{
+    background-color: wheat ;
+}
+section{
+    padding: 2rem 9%;
+}
+.img{
+    height: 180px;
+    width: 67px;
+}
+
+/*header start*/
+
+.btn{
+    font-size: 1.7rem;
+    margin-top: 1rem;
+    display: inline-block;
+    padding: .8rem 3rem;
+    border-radius: 0.5rem;
+    border: .2rem solid violet;
+    color: black;
+    cursor: pointer;
+    display: block;
+    text-align: center;
+}
+.btn:hover{
+    color: aquamarine;
+    background-color: black;
+}
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 9%;
+    background-color: aliceblue;
+    box-shadow: var(--box-shadow);
+
+}
+.logo{
+    font-size: 2rem;
+    font-weight: bolder;
+    color: black;
+}
+.logo i{
+color: orange;
+}
+.navbar a{
+    font-size: 1.7rem;
+    margin: 0 1rem;
+    color: black;
+}
+
+.navbar a:hover{
+    color: orange;
+}
+.icon div{
+    height: 4.5rem;
+    width: 4.5rem;
+    line-height: 4.5rem;
+    border-radius: 0.5rem;
+    background-color: antiquewhite;
+    color: black;
+    font-size: 2rem;
+    margin-right: .3rem;
+    padding: .7rem;
+    text-align: center;
+    cursor: pointer;
+}
+.icon div:hover{
+    background-color: orangered;
+    color: bisque;
+}
+#menu-btn{
+    display: none;
+}
+.search-form{
+    position: absolute;
+    top:110%;
+    right:-110%;
+    width:50rem;
+    height:5rem;
+    background-color: rgb(240, 203, 203);
+    border-radius: 0.5rem;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+}
+.active{
+    right: 2rem;
+    transition: .4s linear;
+}
+.search-form input{
+    height: 100%;
+    width: 100%;
+    background: none;
+    font-size: 2rem;
+    padding:10px;
+    color: black;
+}
+.search-form label{
+    font-size: 2rem;
+    padding-right: 1.2rem;
+    cursor: pointer;
+    color: rgb(7, 7, 7);
+}
+.search-form label:hover{
+    color: orange;
+}
+.content{
+    margin-top: 10px;
+}
+    .shopping-cart{
+        position: absolute;
+        top: 110%;
+        right: -110%;
+        padding: 1rem;
+        border-radius: 0.5rem;
+        width: 30rem;
+        background-color: aliceblue;
+    }
+    .box{
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        position: relative;
+        margin: 1rem 0;
+    }
+    .box img{
+        height: 10rem;
+    }
+    .box .fa-trash{
+        font-size: 2rem;
+        position: absolute;
+        top: 50%;
+        right: 2rem;
+        cursor: pointer;
+        color: rgb(130, 6, 6);
+        transform: translateY(-50%);
+    }
+    .box .fa-trash:hover{
+        color: orange;
+    }
+    .content h3{
+        font-size: 2rem;
+        color: blue;
+        padding-bottom: 1rem;
+    }
+    
+    .content span{
+        font-size: 1.7rem;
+        color: rgb(12, 12, 12);
+       
+    }
+   .quality{
+        padding-left: 1rem;
+    }
+    .total{
+        font-size: 2rem;
+        text-align: center;
+        padding: 1rem 0;
+        color: rgb(27, 25, 25);
+    }
+    .shopping-cart.active{
+        right: 2rem;
+        transition: .4s linear;
+    }
+    .loging-form{
+        position: absolute;
+        right: -110%;
+        top: 110%;
+        background-color: aliceblue;
+        padding: 1rem;
+        border-radius: .5rem;
+        width: 30rem;
+        text-align: center;
+     }
+     .loging-form h3{
+        font-size: 2rem;
+        text-transform: uppercase;
+        color: rgb(46, 40, 102);
+     }
+     .box{
+        margin: 0.7rem 0;
+        background-color: rgb(190, 207, 207);
+        border-radius: 0.5rem;
+        font-size: 1.5rem;
+        width: 100%;
+        padding: 1rem;
+        color: black;
+        text-transform: none;
+     }
+     .loging-form p{
+        font-size: 1.5rem;
+        padding: .5rem 0;
+        color: darkolivegreen;
+        text-transform: none;
+        text-align: left;
+     }
+     .loging-form p a{
+        color: orange;
+        text-decoration: underline;
+     }
+     .loging-form.active{
+        right: 2rem;
+        transition: .4s linear;
+     }
+     .navbar.active{
+        right: 2rem;
+        transition: .4s linear;
+     }
+/*header end*/
+
+/*home secton start*/
+.home{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(/img/banner-bg.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-top: 17rem;
+    padding-bottom: 10rem;
+}
+section .btn{
+    width: 25%;
+}
+ .content{
+    text-align: center;
+    width: 60rem;
+}
+.content h3{
+    color: black;
+    font-size: 3rem;
+}
+.content h3 span{
+    color: rgb(217, 163, 16);
+    font-size: 3rem;
+}
+
+.content p{
+    color: rgb(32, 29, 29);
+    font-size: 1.7rem;
+    line-height: 26px;
+
+}
+.content a{
+   margin-left: 200px;
+}
+/*home secton end*/
+
+/*features start*/
+.heading{
+    text-align: center;
+    font-size: 3.5rem;
+   padding: 1rem 0;
+   padding-bottom: 3rem;
+   color: rgb(13, 1, 1);
+}
+.heading span{
+    background-color: orange;
+    color: beige;
+    display: inline-block;
+    padding: .5rem 3rem;
+    clip-path: polygon(100% 0,93% 50%,100% 99%,0% 100%,7% 50%,0% 0%);
+} 
+
+ .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(30rem,1fr));
+    gap: 1.5rem;
+ 
+}
+.features-img{
+    height: 200px;
+    width: 180px;
+}
+.box-container .box{
+    display: inline-block;
+    text-align: center;
+    line-height: 2.5rem;
+    padding: 2rem 3rem;
+    outline: palegoldenrod;
+    outline-offset: -1rem;
+}
+.box-container .box:hover{
+outline: rgb(130, 6, 6);
+outline-offset: 0rem;
+}
+.features a{
+    font-size:1.7rem;
+    height: 50px;
+    width: 60%;
+    margin-left:70px ;
+}
+.features img{
+    margin: 1rem 0;
+    height: 15rem;
+}
+/*features end*/
+
+/*products start*/
+
+.products-slider{
+    padding: 1rem;
+}
+.products-slider:first-child{
+    margin-bottom: 2rem;
+}
+.products-slider .box{
+ height: 250px;
+display: block;
+padding: 2rem;
+text-align: center;
+}
+.products-slider a{
+    width: 75%;
+    margin-left: 32px;
+}
+
+/*products end*/
+
+/*catagoris start*/
+
+.categoeis .box{
+    padding: 3rem 2rem;
+    border-radius: 0.5rem;
+    background-color: rgb(233, 189, 11);
+    color: aliceblue;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 23%;
+    float: left;
+    margin-right: 2%;
+    margin-bottom: 3rem;
+   
+}
+.categoeis .box:hover{
+    background-color: aquamarine;
+}
+.categoeis a{
+    width: 75%;
+    margin-left: 20px;
+}
+.categoeis h3,p {
+    color: rgb(3, 3, 2);
+    padding: 1rem 0;
+}
+.categoeis img{
+    margin: 1rem 0;
+    height: 12rem;
+}
+/*catagoris end*/
+
+/*review start*/
+.review .box{
+    padding: 3rem 2rem;
+    display: block;
+    width: 31.5%;
+    float: left;
+    margin-right: 1.5rem;
+    text-align: center;
+    background-color: aqua;
+    margin-bottom: 3rem;
+    
+}
+.review .box:hover{
+    background-color: blanchedalmond;
+}
+.review p{
+    margin: 1rem 0;
+    text-align: justify;
+}
+.review h3{
+    color: brown;
+    margin: 1rem 0;
+}
+.review .stars{
+    color: orange;
+}
+.review img{
+    margin: 1rem 0;
+    height: 12rem;
+    width: 20rem;
+}
+/*review end*/
+     
+/*footer start*/
+.footer{
+    background-color: beige;
+}
+.footer .box-container1{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(25rem,1fr));
+    gap: 1.5rem;
+}
+.footer h3{
+    font-size: 2.5rem;
+    color: orange;
+    padding: 1rem 0;
+}
+.footer a i{
+    color: orangered;
+    padding-right: 0.5rem;
+    
+}
+
+.footer a:hover i{
+    padding: .2rem;
+}
+.footer a{
+    font-size: 1rem;
+    padding: 1rem 0;
+    display: block;
+}
+.footer p{
+    color: rgb(11, 11, 11);
+    font-size: 1.5rem;
+    padding: 1rem 0;
+}
+.footer .email{
+    padding: 1rem;
+    font-size: 1.5rem;
+    border-radius: .5rem;
+}
+.footer .btn1{
+    font-size: 1.3rem;
+    color: rgb(243, 229, 229);
+    margin-top: 2rem;
+    background-color: black;
+    padding: 1rem;
+    border-radius: .5rem;
+    cursor: pointer;
+    
+}
+.footer .btn1:hover{
+    background-color: bisque;
+    color: orangered;
+}
+.share a{
+    font-size: 3rem;
+    line-height:3rem;
+    text-align: center;
+    margin-right: 2rem;
+    display: inline-block;
+}
+.share a:hover{
+    font-size: 3.5rem;
+    color: orange;
+}
+.cridet{
+    font-size: 1.2rem;
+    color: whitesmoke;
+    background-color: orchid;
+    text-align: center;
+    padding: 1rem 0;
+}
+/*footer end*/
+/*media quoris*/
+@media(max-width:1080px) {
+    .categoeis img{
+        height: 10rem;
+    }
+}
+@media(max-width:992px){
+    html{
+        font-size: 55%;
+    }
+    .header{
+        padding: 2rem;
+    }
+    
+section{
+    padding: 2rem;
+}
+.wrapper .box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: brown;
+}
+.categoeis img{
+    height: 10rem;
+}
+}
+@media(max-width:768px){
+    
+#menu-btn{
+    display: inline-block;
+}
+.search-form{
+    width: 90%;
+}
+   .navbar{
+        position: absolute;
+        top: 110%;
+        right: -110%;
+        width: 30rem;
+        background-color: antiquewhite;
+        padding: 1rem;
+        border-radius: 0.5rem;
+    }
+    .navbar a{
+        display: block;
+        font-size: 2rem;
+        margin: 2rem;
+    }
+    .content a{
+        margin-left: 160px;
+    }
+    .wrapper .box{
+        padding: 2rem;
+        margin: 2rem;
+        display: block;
+        text-align: center;
+        line-height:3rem;
+       
+    }
+    .wrapper a{
+       
+        width: 100%;
+    }
+    .categoeis .box{
+        width: 48%;
+        float: left;
+    }
+    .review .box{
+      text-align: center;
+      margin-right: 230px;
+    }
+}
+
+@media(max-width:450px){
+    html{
+        font-size: 50%;
+    }
+    .home{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .heading{
+        font-size: 2.5rem;
+    }
+    .content a{
+        margin-left: 150px;
+    }
+    .categoeis .box{
+        width: 98%;
+    }
+    .categoeis a{
+        width: 30%;
+        font-size: 1.5rem;
+        margin-left: 39%;
+    }
+}
